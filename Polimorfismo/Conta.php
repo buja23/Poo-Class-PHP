@@ -12,7 +12,7 @@ Class Conta{
     }
 
     public function depositar($quantia){
-        $this->saldo += $valor;
+        $this->saldo += $quantia;
     }
 
     public function getSaldo(){
