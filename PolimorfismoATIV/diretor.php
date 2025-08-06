@@ -6,7 +6,8 @@
         }
 
         public function bonificar() {
-            $quantia = 1000.00; // Aumento de 20% para diretores
+            parent::bonificar();
+            $quantia = 1000.00; 
             $this->salario += $quantia;
         }
     }

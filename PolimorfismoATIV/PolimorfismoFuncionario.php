@@ -5,10 +5,10 @@ require_once 'gerente.php';
 require_once 'diretor.php';
 require_once 'secretario.php';
 
-$funcionario = new Funcionario(1, "João", 2000.00);
-$gerente = new gerente(2, "Maria", 3000.00);
-$diretor = new diretor(3, "Carlos", 5000.00);
-$secretario = new secretario(4, "Ana", 2500.00);
+$funcionario = new Funcionario(1, "funcionario", 2000.00);
+$gerente = new gerente(2, "gerente", 3000.00);
+$diretor = new diretor(3, "diretor", 5000.00);
+$secretario = new secretario(4, "secretario", 2500.00);
 
 $funcionario->MostrarAtributos();
 $gerente->MostrarAtributos();

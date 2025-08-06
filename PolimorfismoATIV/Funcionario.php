@@ -17,6 +17,6 @@ Class Funcionario{
     }
 
     public function mostrarAtributos(){
-        return "Código: {$this->codigo}, Nome: {$this->nome}, Salário: {$this->salario}";
+        echo "Código: {$this->codigo}, Nome: {$this->nome}, Salário: {$this->salario} <br>";
     }
 }
