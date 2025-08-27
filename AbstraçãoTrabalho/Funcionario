@@ -1,0 +1,52 @@
+<?php
+abstract class Funcionario{
+
+    protected $codigo;
+    protected $nome;
+    protected $salario;
+    protected $vetFilhos;
+
+    public function __construct($codigo, $nome, $salario, $vetFilhos = [])
+    {
+        $this->codigo = $codigo;
+        $this->nome = $nome;
+        $this->salario = $salario;
+        $this->vetFilhos = $vetFilhos;
+    }
+    public function getCodigo(){
+        return $this->codigo;
+    }
+    public function setCodigo($codigo){
+        $this->codigo = $codigo;
+    }
+    public function getNome(){
+        return $this->nome;
+    }
+    public function setNome($nome){
+        $this->nome = $nome;
+    }
+    public function getSalario(){
+        return $this->salario;
+    }
+    public function setSalario($salario){
+        $this->salario = $salario;
+    }
+    public function getVetFilhos(){
+        return $this->vetFilhos;
+    }
+    public function setVetFilhos($vetFilhos){
+        $this->vetFilhos = $vetFilhos;
+    }
+    public function MostrarAtributos(){
+        echo "Codigo: ".$this->getCodigo()."<br>";
+        echo "Nome: ".$this->getNome()."<br>";
+        echo "Salario: ".$this->getSalario()."<br>";
+        echo "Filhos: <br>";
+        foreach($this->getVetFilhos() as $filho){
+            $filho->MostrarAtributos();
+            echo "<br>";
+        }
+    }
+    abstract function calcularSalario($diasUteis);
+
+}
