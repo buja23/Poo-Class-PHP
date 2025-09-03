@@ -8,7 +8,7 @@ class Departamento{
     {
         $this->codigo = $codigo;
         $this->nome = $nome;
-        $this->vetorFuncionarios;
+        $this->vetorFuncionarios = $vetorFuncionarios;
     }
 
     public function getCodigo() {

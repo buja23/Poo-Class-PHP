@@ -43,7 +43,7 @@ abstract class Funcionario{
         echo "Salario: ".$this->getSalario()."<br>";
         echo "Filhos: <br>";
         foreach($this->getVetFilhos() as $filho){
-            $filho->MostrarAtributos();
+            $filho->MostrarDados();
             echo "<br>";
         }
     }
